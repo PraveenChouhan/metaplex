@@ -10,7 +10,7 @@ RUN apk add --no-cache libc6-compat git
 WORKDIR /app
 
 # Add the source code to app
-COPY ./js /app
+COPY ./js /app 
 
 # Install all the dependencies
 RUN yarn install --frozen-lockfile
